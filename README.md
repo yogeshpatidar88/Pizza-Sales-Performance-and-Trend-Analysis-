@@ -205,6 +205,8 @@ To replicate this analysis, follow these three steps:
 ## 📊 Key Analysis Charts & Graphs
 
 The following visualizations were created in **Power BI** based on the generated summary tables, providing actionable insights into sales performance.
+
+
 <img width="288" height="93" alt="Screenshot 2025-10-19 052444" src="https://github.com/user-attachments/assets/d52e28f3-4208-418b-a77e-5f4e470625c1" />
 <img width="388" height="283" alt="Screenshot 2025-10-19 052449" src="https://github.com/user-attachments/assets/5371e0f1-3e76-42c2-a5cc-6ef5f9a878f0" />
 <img width="431" height="158" alt="Screenshot 2025-10-19 052455" src="https://github.com/user-attachments/assets/d704d6a9-8c0c-415c-99ad-986653805e7b" />
