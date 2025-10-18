@@ -181,3 +181,68 @@ SELECT
 FROM pizza_sales
 GROUP BY month
 ORDER BY month;
+```
+
+# 🍕 Pizza Sales Data Analysis Project (MySQL & Power BI)
+
+This project provides a comprehensive analysis of pizza sales performance using **MySQL** for data processing and **SQL** for generating key business insights. The derived tables are ready for export and visualization in **Power BI**.
+
+---
+
+## 🛠️ Project Workflow & Setup
+
+To replicate this analysis, follow these three steps:
+
+### Step 1: Data Preparation (CSV to MySQL)
+1.  **Download:** Obtain the main dataset, `pizza_sales.csv`.
+2.  **Import:** Import the `pizza_sales.csv` file into your MySQL database to create the `pizza_sales` table.
+3.  **Execute SQL:** Run the entire SQL script (available in `pizza_sales_analysis.sql`) to clean the data and generate the 17 summary tables (KPIs, Trends, Distributions, etc.).
+
+### Step 2: Data Transfer (MySQL to Power BI)
+1.  **Export:** Export all 17 generated summary tables (e.g., `total_revenue`, `daily_orders_trend`, `top_5_best_sellers`) from MySQL as separate **CSV files** or establish a direct **MySQL connection** in Power BI.
+2.  **Import:** Import these summary files into Power BI Desktop.
+
+### Step 3: Visualization & Analysis (Power BI)
+1.  **Analyze:** Use the imported summary tables to perform deeper analysis.
+2.  **Visualize:** Create the necessary charts and graphs to build the final interactive dashboard.
+
+---
+
+## 📊 Key Analysis Charts & Graphs
+
+The following visualizations were created in **Power BI** based on the generated summary tables, providing actionable insights into sales performance.
+
+| Visualization | Description | Image Placeholder |
+| :--- | :--- | :--- |
+| **1. Daily Orders Trend** | Shows which day of the week has the most orders. |  |
+| **2. Hourly Orders Trend** | Shows order distribution by time of day. |  |
+| **3. Sales by Category** | Pie chart showing % revenue by pizza category. |  |
+| **4. Sales by Size** | Bar chart comparing revenue by pizza size. |  |
+| **5. Monthly Sales Trend** | Line chart showing total revenue over months. |  |
+| **6. Top 5 Best Sellers** | Bar chart showing best-selling pizzas. |  |
+| **7. Bottom 5 Best Sellers** | Bar chart showing least popular pizzas. |  |
+
+**Note:** All final dashboard images should be placed inside the `images/` folder.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please feel free to fork the repository and open a pull request.
+
+1.  **Fork** the repository.
+2.  **Create a new branch** (`git checkout -b feature/YourAmazingFeature`).
+3.  **Make your changes** (e.g., add new analysis, improve query performance).
+4.  **Commit your changes** (`git commit -m 'Add some YourAmazingFeature'`).
+5.  **Push to the branch** (`git push origin feature/YourAmazingFeature`).
+6.  **Open a Pull Request.**
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+Made with ❤️ by ROSHAN SAINI
+
+[GitHub](https://github.com/YourGitHub) | [LinkedIn](https://linkedin.com/in/YourLinkedIn)
