@@ -95,7 +95,91 @@ The project calculates Key Performance Indicators (KPIs) and various sales trend
 
 ## 💡 Example SQL Query
 
-Here is a sample query to calculate one of the KPIs: Total Revenue.
+-- ================================================
+-- 🛠️ PIZZA SALES DATA ANALYSIS: CONDENSED SQL SCRIPT
+-- ================================================
+
+-- STEP 1: CLEANING & STANDARDIZATION
+-- Temporarily disable safe updates, standardize pizza sizes (e.g., 'S' to 'Regular'), 
+-- and extract the order day name.
+
+SET SQL_SAFE_UPDATES = 0;
+
+-- Standardize pizza_size abbreviations (Example: S → Regular)
+UPDATE pizza_sales
+SET pizza_size = CASE
+    WHEN pizza_size = 'S' THEN 'Regular'
+    -- ... other cases for M, L, XL, XXL
+    ELSE pizza_size
+END;
+
+-- Extract day name (order_day)
+UPDATE pizza_sales
+SET order_day = DAYNAME(STR_TO_DATE(order_date, '%d-%m-%Y'));
+
+SET SQL_SAFE_UPDATES = 1;
+
+
+-- ------------------------------------------------
+-- STEP 2: KEY PERFORMANCE INDICATORS (KPIs)
+-- ------------------------------------------------
+-- Calculate core business metrics (Total Revenue, Avg Order Value, Total Pizzas Sold, etc.)
+
+-- Example: Total Revenue
+CREATE TABLE total_revenue AS
+SELECT 
+    SUM(total_price) AS Total_Revenue
+FROM pizza_sales;
+
+-- Example: Average Pizzas per Order
+CREATE TABLE avg_pizzas_per_order AS
+SELECT 
+    CAST(SUM(quantity) / COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS Avg_Pizzas_per_Order
+FROM pizza_sales;
+
+
+-- ------------------------------------------------
+-- STEP 3-8: TRENDS & INSIGHTS ANALYSIS
+-- ------------------------------------------------
+-- Generate derived tables for visualization (e.g., Daily/Hourly Trends, Distribution, Best/Worst Sellers)
+
+-- Example: Daily Trend for Total Orders (3A)
+CREATE TABLE daily_orders_trend AS
+SELECT 
+    DAYNAME(STR_TO_DATE(order_date, '%d-%m-%Y')) AS order_day,
+    COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales
+GROUP BY order_day
+ORDER BY total_orders DESC;
+
+-- Example: % of Sales by Pizza Size (4B)
+CREATE TABLE sales_by_size AS
+SELECT 
+    pizza_size,
+    CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) FROM pizza_sales) AS DECIMAL(10,2)) AS PCT
+FROM pizza_sales
+GROUP BY pizza_size
+ORDER BY PCT DESC;
+
+-- Example: Top 5 Best Sellers (6A)
+CREATE TABLE top_5_best_sellers AS
+SELECT 
+    pizza_name,
+    SUM(quantity) AS Total_Pizza_Sold
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Pizza_Sold DESC
+LIMIT 5;
+
+-- Example: Monthly Sales Trend (8)
+CREATE TABLE monthly_sales_trend AS
+SELECT 
+    MONTH(STR_TO_DATE(order_date, '%d-%m-%Y')) AS month,
+    SUM(total_price) AS total_revenue
+    -- ... and other metrics
+FROM pizza_sales
+GROUP BY month
+ORDER BY month;
 
 ```sql
 -- Calculate Total Revenue
