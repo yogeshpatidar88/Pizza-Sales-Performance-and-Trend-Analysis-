@@ -95,6 +95,7 @@ The project calculates Key Performance Indicators (KPIs) and various sales trend
 
 ## 💡 Example SQL Query
 
+```sql
 -- ================================================
 -- 🛠️ PIZZA SALES DATA ANALYSIS: CONDENSED SQL SCRIPT
 -- ================================================
@@ -180,10 +181,3 @@ SELECT
 FROM pizza_sales
 GROUP BY month
 ORDER BY month;
-
-```sql
--- Calculate Total Revenue
-SELECT 
-    ROUND(SUM(total_price), 2) AS Total_Revenue
-FROM 
-    pizza_sales;
