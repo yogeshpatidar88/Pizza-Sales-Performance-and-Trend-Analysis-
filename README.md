@@ -1,6 +1,6 @@
-# 🍕 Pizza Sales Data Analysis Project (MySQL)
+# 🍕 Pizza Sales Data Analysis Project (MySQL & Power BI)
 
-This project provides a comprehensive analysis of pizza sales performance using **MySQL** for data processing and **SQL** for generating key business insights. The derived tables are ready for export and visualization in tools like Power BI, Tableau, or Excel.
+This project provides a comprehensive analysis of pizza sales performance using **MySQL** for data processing and **SQL** for generating key business insights. The derived tables are ready for export and visualization in **Power BI**.
 
 ## 📁 Main Dataset
 
@@ -88,7 +88,7 @@ The project calculates Key Performance Indicators (KPIs) and various sales trend
 | :--- | :--- |
 | **Database** | MySQL |
 | **Language** | SQL |
-| **Visualization** | Power BI / Tableau / Excel |
+| **Visualization** | **Power BI** |
 | **Dataset Format** | CSV (`pizza_sales.csv`) |
 
 ---
