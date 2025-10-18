@@ -183,12 +183,6 @@ GROUP BY month
 ORDER BY month;
 ```
 
-# 🍕 Pizza Sales Data Analysis Project (MySQL & Power BI)
-
-This project provides a comprehensive analysis of pizza sales performance using **MySQL** for data processing and **SQL** for generating key business insights. The derived tables are ready for export and visualization in **Power BI**.
-
----
-
 ## 🛠️ Project Workflow & Setup
 
 To replicate this analysis, follow these three steps:
