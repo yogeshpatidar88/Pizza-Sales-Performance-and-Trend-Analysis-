@@ -205,7 +205,14 @@ To replicate this analysis, follow these three steps:
 ## 📊 Key Analysis Charts & Graphs
 
 The following visualizations were created in **Power BI** based on the generated summary tables, providing actionable insights into sales performance.
-
+<img width="288" height="93" alt="Screenshot 2025-10-19 052444" src="https://github.com/user-attachments/assets/d52e28f3-4208-418b-a77e-5f4e470625c1" />
+<img width="388" height="283" alt="Screenshot 2025-10-19 052449" src="https://github.com/user-attachments/assets/5371e0f1-3e76-42c2-a5cc-6ef5f9a878f0" />
+<img width="431" height="158" alt="Screenshot 2025-10-19 052455" src="https://github.com/user-attachments/assets/d704d6a9-8c0c-415c-99ad-986653805e7b" />
+<img width="434" height="203" alt="Screenshot 2025-10-19 052500" src="https://github.com/user-attachments/assets/2ccc3067-e1dd-4f6b-873e-c6507f5d3362" />
+<img width="359" height="237" alt="Screenshot 2025-10-19 052516" src="https://github.com/user-attachments/assets/b2d9edad-d892-46a5-98d0-a9ea9d2bce66" />
+<img width="360" height="241" alt="Screenshot 2025-10-19 052521" src="https://github.com/user-attachments/assets/fa7144b9-79fa-4322-8da8-4ddbaf399a8e" />
+<img width="408" height="237" alt="Screenshot 2025-10-19 052525" src="https://github.com/user-attachments/assets/2a9144f5-3c66-43b1-914d-68dffda3dfaa" />
+<img width="428" height="242" alt="Screenshot 2025-10-19 052529" src="https://github.com/user-attachments/assets/667eb10a-38c3-4668-bf0e-fa47f73c9278" />
 
 ---
 
