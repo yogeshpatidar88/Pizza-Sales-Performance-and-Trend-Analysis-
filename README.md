@@ -212,32 +212,9 @@ To replicate this analysis, follow these three steps:
 
 The following visualizations were created in **Power BI** based on the generated summary tables, providing actionable insights into sales performance.
 
-| Visualization | Description | Image Placeholder |
-| :--- | :--- | :--- |
-| **1. Daily Orders Trend** | Shows which day of the week has the most orders. |  |
-| **2. Hourly Orders Trend** | Shows order distribution by time of day. |  |
-| **3. Sales by Category** | Pie chart showing % revenue by pizza category. |  |
-| **4. Sales by Size** | Bar chart comparing revenue by pizza size. |  |
-| **5. Monthly Sales Trend** | Line chart showing total revenue over months. |  |
-| **6. Top 5 Best Sellers** | Bar chart showing best-selling pizzas. |  |
-| **7. Bottom 5 Best Sellers** | Bar chart showing least popular pizzas. |  |
-
-**Note:** All final dashboard images should be placed inside the `images/` folder.
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please feel free to fork the repository and open a pull request.
-
-1.  **Fork** the repository.
-2.  **Create a new branch** (`git checkout -b feature/YourAmazingFeature`).
-3.  **Make your changes** (e.g., add new analysis, improve query performance).
-4.  **Commit your changes** (`git commit -m 'Add some YourAmazingFeature'`).
-5.  **Push to the branch** (`git push origin feature/YourAmazingFeature`).
-6.  **Open a Pull Request.**
-
----
 
 ## 📜 License
 
@@ -245,4 +222,4 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 Made with ❤️ by ROSHAN SAINI
 
-[GitHub](https://github.com/YourGitHub) | [LinkedIn](https://linkedin.com/in/YourLinkedIn)
+[GitHub]([https://github.com/YourGitHub](https://github.com/roshansaini18)) | [LinkedIn]([https://linkedin.com/in/YourLinkedIn](https://www.linkedin.com/in/roshan-saini-6a2000260/))
