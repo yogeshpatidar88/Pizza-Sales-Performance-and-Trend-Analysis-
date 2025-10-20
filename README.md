@@ -230,6 +230,4 @@ The following visualizations were created in **Power BI** based on the generated
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
-Made with ❤️ by ROSHAN SAINI
-
-[GitHub](https://github.com/roshansaini18) | [LinkedIn](https://www.linkedin.com/in/roshan-saini-6a2000260/)
+Made with ❤️ by Roshan & Yogesh & Pratik
