@@ -230,4 +230,4 @@ The following visualizations were created in **Power BI** based on the generated
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
-Made with ❤️ by Roshan & Yogesh & Pratik
+Made with ❤️ by Roshan Saini & Yogesh Patidar & Pratik Prajn
